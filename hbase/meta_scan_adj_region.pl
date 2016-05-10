@@ -2,7 +2,7 @@
 
 use Data::Dumper;
 my $file=$ARGV[0];
-
+## where the $file will be the meta file to scan.
 open (R, ">parsed_meta");
 
 my @line=`cat $file|awk -F "," '{print \$3,\$4}'`;
